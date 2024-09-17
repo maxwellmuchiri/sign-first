@@ -1,0 +1,112 @@
+/* HomePage.css */
+
+/* Section Styling */
+.section {
+  padding: 3rem 0; /* Vertical padding for all sections */
+  text-align: center; /* Center text for headings and content */
+}
+
+.section h2, .section h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0d6efd; /* Primary blue color for headings */
+  margin-bottom: 1rem; /* Space between heading and content */
+}
+
+.section p {
+  font-size: 1.2rem;
+  color: #6c757d; /* Muted gray color for paragraph text */
+  margin-bottom: 2rem;
+}
+
+/* Carousel Styling */
+.carousel-section {
+  background-color: #f8f9fa; /* Light background for carousel section */
+  padding: 2rem 0;
+}
+
+.carousel img {
+  height: 400px;
+  object-fit: cover; /* Ensure images cover the area without distortion */
+  border-radius: 0.5rem; /* Add rounded corners to the images */
+}
+
+/* Button Styling */
+button {
+  background-color: #0d6efd; /* Primary blue background */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Quote Section */
+.get-quote-section {
+  background-color: #343a40; /* Dark background for the quote section */
+  color: white; /* White text for contrast */
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.get-quote-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Section with Moving Images */
+.moving-images-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Space between images */
+  padding: 3rem 0;
+}
+
+.moving-images-section img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  animation: moveLeftRight 5s ease-in-out infinite; /* Image moving animation */
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .moving-images-section {
+    flex-direction: column; /* Stack images on smaller screens */
+    gap: 1rem;
+  }
+
+  .carousel img {
+    height: 300px; /* Adjust carousel image height on smaller screens */
+  }
+
+  .section h2, .section h3 {
+    font-size: 2rem; /* Smaller font size on mobile */
+  }
+
+  .section p {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem; /* Adjust button size for mobile */
+  }
+}
