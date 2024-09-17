@@ -1,13 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Import 'Routes' instead of 'Switch'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  
 
 // Importing components
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
+import ProductPage from './components/ProductPage';  // Import ProductPage
 import Footer from './components/Footer';
 
 // Importing CSS
-import './App.css'; // Optional: Add global styles if needed
+import './App.css'; 
+
 
 function App() {
   return (
@@ -18,10 +20,11 @@ function App() {
 
         {/* Main content area */}
         <main>
-          <Routes>  {/* Use 'Routes' instead of 'Switch' */}
+          <Routes>  
             {/* Home Page Route */}
-            <Route path="/" element={<HomePage />} /> {/* Use 'element' prop in Route */}
-            {/* Additional Routes can be added here as your project expands */}
+            <Route path="/" element={<HomePage />} />
+            {/* Product Page Route */}
+            <Route path="/products" element={<ProductPage />} />  {/* Add ProductPage route */}
           </Routes>
         </main>
 

@@ -1,6 +1,7 @@
 // components/HomePage.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './HomePage.css'; 
 
 const HomePage = () => {
   return (
