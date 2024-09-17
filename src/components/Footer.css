@@ -1,0 +1,52 @@
+/* Footer.css */
+
+/* Footer Container */
+footer {
+  background-color: #343a40; /* Dark background */
+  color: white; /* White text */
+  padding: 2rem 0; /* Padding for spacing */
+  text-align: center; /* Center all text */
+  margin-top: 2rem; /* Space before the footer starts */
+}
+
+/* Footer Links */
+footer a {
+  color: #f8f9fa; /* Light gray for links */
+  text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+  color: #0d6efd; /* Bootstrap primary blue color on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Sections */
+.footer-location,
+.footer-contact,
+.footer-social {
+  margin-bottom: 1rem; /* Add some space between sections */
+}
+
+.footer-social a {
+  margin: 0 10px; /* Spacing between social media icons */
+  font-size: 1.5rem; /* Increase icon size */
+}
+
+/* Social Media Icons */
+.footer-social i {
+  color: white;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.footer-social i:hover {
+  color: #0d6efd; /* Blue color for social icons on hover */
+}
+
+/* Footer Bottom Line */
+.footer-bottom {
+  border-top: 1px solid #495057; /* Light border for separation */
+  padding-top: 1rem; /* Space above the line */
+  margin-top: 1rem; /* Space between content and bottom line */
+  font-size: 0.9rem;
+  color: #adb5bd; /* Muted text color */
+}
